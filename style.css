@@ -1,0 +1,182 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 35%);
+    color: #000000; /* Dark text */
+    margin: 0;
+    padding: 0;
+  }
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+/* Estilos para el logo */
+.logo {
+  max-width: 100px; /* Ajusta este valor según sea necesario */
+  height: auto; /* Mantiene la proporción del logo */
+  display: block; /* Para centrar el logo si es necesario */
+  margin: 0 auto; /* Centra el logo horizontalmente */
+}
+.highlight {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Letras blancas */
+  padding: 0.15em; /* Espacio alrededor del texto dentro del span */
+  margin: 0 0.2em; /* Espacio antes y después del span */
+}
+.highlight-2 {
+  background-color: #8c00ff; /* Fondo negro */
+  color: #ffffff; /* Letras blancas */
+  padding: 0.2em; /* Espacio alrededor del texto dentro del span */
+  margin: 0 0.5em; /* Espacio antes y después del span */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+
+  .input-field {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff; /* Dark border for input */
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: calc(100% - 16px);
+  }
+  .btn-green {
+    
+    background-color: #22c55e;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color:#22c55e ;
+    font-weight: bold;
+    animation: bounce 1s ease infinite;
+  }
+  .disclaimer, .disclaimer-red {
+    padding: 20px;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #fff;
+  }
+.disclaimer-red {
+    background-color: #000000; /* Fondo negro */
+    color: #fff;
+    margin-top: 0px;
+    margin-left: 0; /* No hay margen a la izquierda */
+    margin-right: 0; /* No hay margen a la derecha */
+    margin-bottom: 0; /* No hay margen abajo */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho */
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.levelads-banner {
+  background-color: #8c00ff;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 0; /* Se elimina el margen superior para evitar el espacio morado */
+}
+
+.container, .container-2, .container-3 {
+  max-width: 600px;
+  margin: 0 auto; /* Centrar el contenedor y eliminar cualquier margen superior */
+  padding: 0; /* Ajuste de acuerdo a la necesidad de padding interno */
+}
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+  }
+.container-2 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  
+}
+.container-3 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #000000;
+}
+  .text-center {
+    text-align: center;
+  }
+  .text-lg {
+    font-size: 1rem;
+  }
+  .text-4xl {
+    font-size: 1.5rem;
+  }
+  .font-bold {
+    font-weight: 600;
+  }
+  .my-4 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
+.my-5 {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+  .my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .max-w-md {
+    max-width: 28rem;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra las imágenes horizontalmente */
+  margin: 30px 30px; /* Margen superior e inferior y margen lateral */
+  max-width: 600px; /* Ajusta al ancho máximo que desees */
+}
+
+.rounded-image {
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  margin: 20px 0; /* Margen superior e inferior para el efecto en cascada */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+}
+
+/* Media query para pantallas de tamaño escritorio */
+@media (min-width: 768px) {
+  .image-container {
+    flex-direction: row; /* Cambia la dirección de la pila a horizontal */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una sola línea */
+    justify-content: center; /* Centra las imágenes en el contenedor si no ocupan todo el ancho */
+    align-items: flex-start; /* Alinea las imágenes al inicio del contenedor en el eje cruzado */
+  }
+
+  .rounded-image {
+    width: calc(50% - 40px); /* Ocupa el 50% del ancho del contenedor menos los márgenes */
+    margin: 20px; /* Añade márgenes alrededor de cada imagen para separarlas */
+  }
+}
+
+
+
+
